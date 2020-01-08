@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+    <title>遊戲介紹</title>
+    <link rel="stylesheet" type="text/css" href="windowstyle.css">
+</head>
+
+<body bgcolor='skyblue'>
+    <div align='center' style="font-size:40px;font-weight:bold">遊戲介紹</div><br><br>
+    <div style="font-weight:bold">這是一個個人進行的益智數學遊戲。</div><p>
+        <div style="font-weight:bold">(1)首先電腦會想好一組由左至右排列好的四個數碼（數碼0可以在最前面，且數碼不可以重複出現被使用）， 例如1847，讓玩者去猜。</div>
+    <p>
+        <div style="font-weight:bold">(2)猜題後電腦會給猜題者提示，譬如玩者猜了6149，則提示是1A1B，其中A表示有這個數字，且數字是在正確的位置， B表示有這個數字，但位置不對；因為數字4被猜對了位置也正確，而數字1被雖猜對了但位置不正確，所以得到1A1B。</div>
+    <p>
+        <div style="font-weight:bold">(3)用這樣的遊戲規則，看能否最少的步驟猜中電腦中設的數字。</div>
+    <p>
+        <br><br>
+        <div align='center' style="font-size:40px;font-weight:bold">選擇遊戲難度</div><br><br>
+        <div align='center'>
+            <input id="easy" type="button" value='簡單' style="width:100px;height:50px;border:3px black double;font-size:30px;background-color:mediumaquamarine;border-color:black;">
+            <input id="medium" type="button" value='普通' style="width:100px;height:50px;border:3px black double;font-size:30px;background-color:mediumaquamarine;border-color:black;">
+            <input id="hard" type="button" value='困難' style="width:100px;height:50px;border:3px black double;font-size:30px;background-color:mediumaquamarine;border-color:black;">
+        </div><br><br>
+        <div>
+            <div align='center' style="font-size:40px;font-weight:bold">魚卡介紹</div><br><br>
+            <div align='center' style="font-size:40px;font-weight:bold">簡單關卡</div><br>
+            <a style="cursor:pointer" onclick="var a = getElementById('a');a.style.display=a.style.display=='none'?'':'none'"><img src="card\G白帶魚資料卡-01.png" width="18%" height="13%" /></a>
+            <div id="a" style="display:none"><img src="card\G白帶魚資料卡-01.png" width="70%" height="50%" /></div>
+            <a style="cursor:pointer" onclick="var b = getElementById('b');b.style.display=b.style.display=='none'?'':'none'"><img src="card\G沙丁魚資料卡-01.png" width="18%" height="13%" /></a>
+            <div id="b" style="display:none"><img src="card\G沙丁魚資料卡-01.png" width="70%" height="50%" /></div>
+            <a style="cursor:pointer" onclick="var c = getElementById('c');c.style.display=c.style.display=='none'?'':'none'"><img src="card\G虱目魚資料卡-01.png" width="18%" height="13%" /></a>
+            <div id="c" style="display:none"><img src="card\G虱目魚資料卡-01.png" width="70%" height="50%" /></div>
+            <a style="cursor:pointer" onclick="var d = getElementById('d');d.style.display=d.style.display=='none'?'':'none'"><img src="card\G秋刀魚資料卡-01.png" width="18%" height="13%" /></a>
+            <div id="d" style="display:none"><img src="card\G秋刀魚資料卡-01.png" width="70%" height="50%" /></div>
+            <a style="cursor:pointer" onclick="var e = getElementById('e');e.style.display=e.style.display=='none'?'':'none'"><img src="card\G竹莢魚資料卡-01.png" width="18%" height="13%" /></a>
+            <div id="e" style="display:none"><img src="card\G竹莢魚資料卡-01.png" width="70%" height="50%" /></div>
+            <a style="cursor:pointer" onclick="var f = getElementById('f');f.style.display=f.style.display=='none'?'':'none'"><img src="card\G剝皮魚資料卡-01.png" width="18%" height="13%" /></a>
+            <div id="f" style="display:none"><img src="card\G剝皮魚資料卡-01.png" width="70%" height="50%" /></div>
+            <a style="cursor:pointer" onclick="var g = getElementById('g');g.style.display=g.style.display=='none'?'':'none'"><img src="card\G臭肚魚資料卡-01.png" width="18%" height="13%" /></a>
+            <div id="g" style="display:none"><img src="card\G臭肚魚資料卡-01.png" width="70%" height="50%" /></div>
+            <a style="cursor:pointer" onclick="var h = getElementById('h');h.style.display=h.style.display=='none'?'':'none'"><img src="card\G魷魚資料卡-01.png" width="18%" height="13%" /></a>
+            <div id="h" style="display:none"><img src="card\G魷魚資料卡-01.png" width="70%" height="50%" /></div>
+            <a style="cursor:pointer" onclick="var i = getElementById('i');i.style.display=i.style.display=='none'?'':'none'"><img src="card\G龍蝦資料卡-01.png" width="18%" height="13%" /></a>
+            <div id="i" style="display:none"><img src="card\G龍蝦資料卡-01.png" width="70%" height="50%" /></div>
+            <a style="cursor:pointer" onclick="var j = getElementById('j');j.style.display=j.style.display=='none'?'':'none'"><img src="card\G鎖管資料卡-01.png" width="18%" height="13%" /></a>
+            <div id="j" style="display:none"><img src="card\G鎖管資料卡-01.png" width="70%" height="50%" /></div>
+
+            <div align='center' style="font-size:40px;font-weight:bold">普通關卡</div><br>
+            <a style="cursor:pointer" onclick="var aa = getElementById('aa');aa.style.display=aa.style.display=='none'?'':'none'"><img src="card\O土魠魚資料卡-01.png" width="18%" height="13%" /></a>
+            <div id="aa" style="display:none"><img src="card\O土魠魚資料卡-01.png" width="70%" height="50%" /></div>
+            <a style="cursor:pointer" onclick="var bb = getElementById('bb');bb.style.display=bb.style.display=='none'?'':'none'"><img src="card\O白鯧魚資料卡-01.png" width="18%" height="13%" /></a>
+            <div id="bb" style="display:none"><img src="card\O白鯧魚資料卡-01.png" width="70%" height="50%" /></div>
+            <a style="cursor:pointer" onclick="var cc = getElementById('cc');cc.style.display=cc.style.display=='none'?'':'none'"><img src="card\O赤魚資料卡-01.png" width="18%" height="13%" /></a>
+            <div id="cc" style="display:none"><img src="card\O赤魚資料卡-01.png" width="70%" height="50%" /></div>
+            <a style="cursor:pointer" onclick="var dd = getElementById('dd');dd.style.display=dd.style.display=='none'?'':'none'"><img src="card\O海鱺資料卡-01.png" width="18%" height="13%" /></a>
+            <div id="dd" style="display:none"><img src="card\O海鱺資料卡-01.png" width="70%" height="50%" /></div>
+            <a style="cursor:pointer" onclick="var ee = getElementById('ee');ee.style.display=ee.style.display=='none'?'':'none'"><img src="card\O鬼頭刀資料卡-01.png" width="18%" height="13%" /></a>
+            <div id="ee" style="display:none"><img src="card\O鬼頭刀資料卡-01.png" width="70%" height="50%" /></div>
+            <a style="cursor:pointer" onclick="var ff = getElementById('ff');ff.style.display=ff.style.display=='none'?'':'none'"><img src="card\O曼波魚資料卡-01.png" width="18%" height="13%" /></a>
+            <div id="ff" style="display:none"><img src="card\O曼波魚資料卡-01.png" width="70%" height="50%" /></div>
+            <a style="cursor:pointer" onclick="var gg = getElementById('gg');gg.style.display=gg.style.display=='none'?'':'none'"><img src="card\O旗魚資料卡-01.png" width="18%" height="13%" /></a>
+            <div id="gg" style="display:none"><img src="card\O旗魚資料卡-01" width="70%" height="50%" /></div>
+            <a style="cursor:pointer" onclick="var hh = getElementById('hh');hh.style.display=hh.style.display=='none'?'':'none'"><img src="card\O鯖魚資料卡-01.png" width="18%" height="13%" /></a>
+            <div id="hh" style="display:none"><img src="card\O鯖魚資料卡-01.png" width="70%" height="50%" /></div>
+            <a style="cursor:pointer" onclick="var ii = getElementById('ii');ii.style.display=ii.style.display=='none'?'':'none'"><img src="card\O鱈魚資料卡-01.png" width="18%" height="13%" /></a>
+            <div id="ii" style="display:none"><img src="card\O鱈魚資料卡-01.png" width="70%" height="50%" /></div>
+            <a style="cursor:pointer" onclick="var jj = getElementById('jj');jj.style.display=jj.style.display=='none'?'':'none'"><img src="card\O鱸魚資料卡-01.png" width="18%" height="13%" /></a>
+            <div id="jj" style="display:none"><img src="card\O鱸魚資料卡-01.png" width="70%" height="50%" /></div>
+
+            <div align='center' style="font-size:40px;font-weight:bold">困難關卡</div><br>
+            <a style="cursor:pointer" onclick="var aaa = getElementById('aaa');aaa.style.display=aaa.style.display=='none'?'':'none'"><img src="card\R金鱗魚資料卡-01.png" width="18%" height="13%" /></a>
+            <div id="aaa" style="display:none"><img src="card\R金鱗魚資料卡-01.png" width="70%" height="50%" /></div>
+            <a style="cursor:pointer" onclick="var bbb = getElementById('bbb');bbb.style.display=bbb.style.display=='none'?'':'none'"><img src="card\R紅皮刀資料卡-01.png" width="18%" height="13%" /></a>
+            <div id="bbb" style="display:none"><img src="card\R紅皮刀資料卡-01.png" width="70%" height="50%" /></div>
+            <a style="cursor:pointer" onclick="var ccc = getElementById('ccc');ccc.style.display=ccc.style.display=='none'?'':'none'"><img src="card\R粗皮鯛資料卡-01.png" width="18%" height="13%" /></a>
+            <div id="ccc" style="display:none"><img src="card\R粗皮鯛資料卡-01.png" width="70%" height="50%" /></div>
+            <a style="cursor:pointer" onclick="var ddd = getElementById('ddd');ddd.style.display=ddd.style.display=='none'?'':'none'"><img src="card\R野生烏魚資料卡-01.png" width="18%" height="13%" /></a>
+            <div id="ddd" style="display:none"><img src="card\R野生烏魚資料卡-01.png" width="70%" height="50%" /></div>
+            <a style="cursor:pointer" onclick="var eee = getElementById('eee');eee.style.display=eee.style.display=='none'?'':'none'"><img src="card\R雀鯛資料卡-01.png" width="18%" height="13%" /></a>
+            <div id="eee" style="display:none"><img src="card\R雀鯛資料卡-01.png" width="70%" height="50%" /></div>
+            <a style="cursor:pointer" onclick="var fff = getElementById('fff');fff.style.display=fff.style.display=='none'?'':'none'"><img src="card\R隆頭鸚哥魚資料卡-01.png" width="18%" height="13%" /></a>
+            <div id="fff" style="display:none"><img src="card\R隆頭鸚哥魚資料卡-01.png" width="70%" height="50%" /></div>
+            <a style="cursor:pointer" onclick="var ggg = getElementById('ggg');ggg.style.display=ggg.style.display=='none'?'':'none'"><img src="card\R黑鮪資料卡-01.png" width="18%" height="13%" /></a>
+            <div id="ggg" style="display:none"><img src="card\R黑鮪資料卡-01" width="70%" height="50%" /></div>
+            <a style="cursor:pointer" onclick="var hhh = getElementById('hhh');hhh.style.display=hhh.style.display=='none'?'':'none'"><img src="card\R蝦蛄資料卡-01.png" width="18%" height="13%" /></a>
+            <div id="hhh" style="display:none"><img src="card\R蝦蛄資料卡-01.png" width="70%" height="50%" /></div>
+            <a style="cursor:pointer" onclick="var iii = getElementById('iii');iii.style.display=iii.style.display=='none'?'':'none'"><img src="card\R蘇眉資料卡-01.png" width="18%" height="13%" /></a>
+            <div id="iii" style="display:none"><img src="card\R蘇眉資料卡-01.png" width="70%" height="50%" /></div>
+            <a style="cursor:pointer" onclick="var jjj = getElementById('jjj');jjj.style.display=jjj.style.display=='none'?'':'none'"><img src="card\R鰻魚資料卡-01.png" width="18%" height="13%" /></a>
+            <div id="jjj" style="display:none"><img src="card\R鰻魚資料卡-01.png" width="70%" height="50%" /></div>
+        </div>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script src="javascripts/index.js"></script>
+</body>
+</html>

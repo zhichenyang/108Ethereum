@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>普通1A2B</title>
+    <link rel="stylesheet" type="text/css" href="stylesheets/windowstyle.css">
+</head>
+<body>
+    <div align='center'>
+        <h4 id="p">請輸入文字：</h4>
+        <input id="h_inputNum" type="text" name="欄位名稱" maxlength="4" placeholder="請輸入四位數數字">
+        <button id="guess">提交</button>
+    </div>
+    <div id="left" align="center">
+        <input id=prepage type="button" value='回上一頁' onclick="location.href='Javascript:history.go(-1)'">      
+    </div>
+    <div id="right" align="center">
+        <input id=restart type="button" value='重新開始' onclick="location.href='javascript:window.location.reload()'">
+    </div>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+    <script src="javascripts/index.js"></script>
+</body>
+</html>
